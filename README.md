@@ -28,14 +28,17 @@ The system uses a dataset named `Telco-Customer-Churn.csv` which contains inform
 
 The repository is organized into a sequential pipeline for reproducibility:
 
- **`data/`**: Contains raw and processed datasets.
- **`artifacts/`**: Saved train/test splits (`X_train.csv`, `X_test.csv`, etc.).
- **`01_handling_missing_and_duplicate_values.ipynb`**: Data cleaning.
- **`02_handling_outliers.ipynb`**: Statistical outlier management.
- **`03_feature_binning.ipynb`**: Categorizing continuous data.
- **`04_scaling_and_encoding.ipynb`**: Normalization and categorical conversion.
- **`05_model_training.ipynb`**: Model training and evaluation.
+ .
+├── data/               # Raw and processed datasets
+├── images/             # pieplot.png, boxplot.png, etc.
+├── notebooks/          # 01_cleaning.ipynb, 02_outliers.ipynb, etc.
+├── README.md           # Project documentation
+├── LICENSE             # Usage permissions
+└── requirements.txt    # Python dependencies
 
 **Results**: The Logistic Regression model achieved an **accuracy of 80%** on the test dataset.
 
+---
 
+##  License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
