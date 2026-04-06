@@ -29,7 +29,7 @@ The system uses a dataset named `Telco-Customer-Churn.csv` which contains inform
 
 ###  Data Overview
 We analyzed the distribution of customer demographics and service usage to identify patterns in churn.
-![Customer Distributions](data-process\images\boxplot.png)
+![Customer Distributions](data-process/images/boxplot.png)
 *This visualization shows the breakdown of gender, contract types, and the overall churn rate of 26.6%.*
 
 
