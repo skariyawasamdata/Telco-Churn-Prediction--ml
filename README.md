@@ -24,19 +24,31 @@ The system uses a dataset named `Telco-Customer-Churn.csv` which contains inform
  **Target Variable:** `Churn` (Indicates if the customer stayed or churned)
 
 
-### Project Structure & Workflow
+###  Data Overview
+We analyzed the distribution of customer demographics and service usage to identify patterns in churn.
+![Customer Distributions](images/pieplot.png)
+*This visualization shows the breakdown of gender, contract types, and the overall churn rate of 26.6%.*
 
-The repository is organized into a sequential pipeline for reproducibility:
 
- .
-├── data/               # Raw and processed datasets
-├── images/             # pieplot.png, boxplot.png, etc.
-├── notebooks/          # 01_cleaning.ipynb, 02_outliers.ipynb, etc.
-├── README.md           # Project documentation
-├── LICENSE             # Usage permissions
-└── requirements.txt    # Python dependencies
 
-**Results**: The Logistic Regression model achieved an **accuracy of 80%** on the test dataset.
+###  Distribution of Charges and Tenure
+The following density plots show how tenure and monthly charges are distributed across the dataset.
+![Feature Distributions](images/Distributionplot.png)
+*Key observation: Tenure shows a bimodal distribution, indicating a mix of new and long-term customers.*
+
+
+
+###  Statistical Analysis
+Boxplots were used to check for outliers in numerical features before model training.
+![Outlier Analysis](images/boxplot.png)
+*Monthly and Total charges show a wide spread but remain within expected ranges for the telco industry.*
+
+
+
+## Model & Results
+The project evaluates multiple models, including Logistic Regression and XGBoost, to predict the Churn target variable.
+
+**Performance**: The Logistic Regression model achieved an accuracy of 80% on the test dataset.
 
 ---
 
